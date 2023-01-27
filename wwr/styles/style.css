@@ -1,0 +1,137 @@
+/* Header color*/
+header{
+    color: ;
+    text-align: left;
+    }
+/* ------------------------------*/
+/* Allow content size to not go over the max-width size across devices*/
+/* keep it from stretching across the whole browser window on very large monitors*/
+
+#content{
+max: width 1600px; ;
+margin: center;
+text-align: center;
+margin: 0 auto;
+}
+/* ------------------------------*/
+/* Logo styling and width*/
+.icon{
+margin-left:left;
+width: 80px;
+}
+/* ------------------------------*/
+/* Centers the main pages/links references*/
+/*<nav "mainLinks1">*/
+.mainLinks1{
+    text-align: center;
+    /*word-spacing: 60px;*/
+    /*to add later* cx*/
+}
+#hero-msg  {
+ text-align: center;
+}
+/*Div/Section add height to rapid and background color*//
+#background {   
+}
+#background {
+    height: 725px;
+    background-color: #0a69a311;
+    color:#3E8585;
+}
+/* ------------------------------*/
+/* Add color to the Selectors*/
+header {
+    background-color:#3E8585;
+}
+body {
+    background-color: #FFFBD7; 
+}
+nav a:hover {
+    background-color: #83abbb65;
+    color: #111111;
+}
+nav a {
+    background-color: #397e9af7; 
+}
+footer {
+     background-color: #111111;        
+}
+/* ------------------------------*/
+/*Adding class colors*/
+.book {
+    background-color: hsla(91, 49%, 81%, 0.514);
+}
+        a:hover {
+            background-color: #83abbb65; 
+            color: #111111;  
+}
+.join {
+    background-color: hsla(91, 49%, 81%, 0.514);  
+}
+a:hover {
+    background-color: #83abbb65; 
+    color: #111111;  
+}
+.msg {
+    background-color: #83abbb65;    
+}
+/* --------Addional foreground colors for text----------------------*/
+.home-title {
+color: #555c05;  
+ }
+ h4 {
+    color: #111111;    
+ }
+ .book { 
+    color: #111111;
+ }
+ .msg p{
+    color: #111111;  
+ }
+ .msg h2{
+    background-color: #83abbb65; 
+    color: #8f3333;  
+ }
+ footer p{
+    color: #ffffff; 
+    text-align: left;
+    /*front size*/
+    font-size: 1.2em;   
+ }
+ footer a:hover{
+    background-color: #83abbb65; 
+    color: #ffffff;  
+ }
+/* ------------------------------*/
+/* social media*/
+.social {
+    margin: left;
+    text-align: left;  
+}
+/* -------------hero-img Width and height-----------------*/
+#hero-img{
+   width: 100%;
+}
+
+/* -------------Remove  underline link and make it text-decoration -----------------*/
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}    
+.book {
+    text-align: center;
+    color: #111111; 
+    text-decoration: none;
+}
+.join{
+    color: #111111; 
+    text-decoration: none;   
+}
+footer a{
+    color: #fffcfc; 
+    text-decoration: none;   
+}
+footer p a:hover {
+    text-decoration: underline;
+}    
