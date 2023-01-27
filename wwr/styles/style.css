@@ -23,7 +23,7 @@ width: 80px;
 /* Centers the main pages/links references*/
 /*<nav "mainLinks1">*/
 .mainLinks1{
-    text-align: center;
+    text-align: left;
     /*word-spacing: 60px;*/
     /*to add later* cx*/
 }
