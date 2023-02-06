@@ -1,3 +1,34 @@
+/*Google fonts styles that that are imported*/
+@import url(https://fonts.googleapis.com/css2?family=EB+Garamond&family=Flamenco&family=Noto+Sans:wght@300&display=swap);
+  /* change the values below to your chosen font(s) */
+  :root {
+    --heading-font: "Flamenco";
+    --paragraph-font: Noto Sans, Helvetica, sans-serif;}
+
+ h1 {
+    font-family: var(--heading-font);
+  }
+
+ .msg h2 {
+  font-family: var(--heading-font);
+ }
+
+  h5 {
+    font-family: Noto Sans;
+ }
+
+
+ p h3 {
+    font-family: var(--paragraph-font);
+  }
+  h3{
+    color: #3E8585;
+  }
+
+  h6{
+    font-family: 'Times New Roman', Times, serif
+  }
+ 
 /* Header color*/
 header{
     color: ;
@@ -16,8 +47,10 @@ margin: 0 auto;
 /* ------------------------------*/
 /* Logo styling and width*/
 .icon{
-margin-left:left;
+margin-left:left; 
 width: 80px;
+padding-top: 10px;
+border-radius: 50%; /* use to circle image*/
 }
 /* ------------------------------*/
 /* Centers the main pages/links references*/
@@ -44,17 +77,19 @@ header {
     background-color:#3E8585;
 }
 body {
-    background-color: #FFFBD7; 
+    background-color: #FFFBD7;
+    font-size: 22px;
+    margin: 0;
+    padding: 0; 
 }
 nav a:hover {
     background-color: #83abbb65;
     color: #111111;
 }
-nav a {
-    background-color: #397e9af7; 
-}
 footer {
-     background-color: #111111;        
+     background-color: #111111;
+     padding: 25px 50px; 
+     margin-top: 200px;       
 }
 /* ------------------------------*/
 /*Adding class colors*/
@@ -73,23 +108,21 @@ a:hover {
     color: #111111;  
 }
 .msg {
-    background-color: #83abbb65;    
+    background-color: #83abbb65; 
+    line-height: 1.5em; /*banner line*/
+    padding: 35px;  
 }
 /* --------Addional foreground colors for text----------------------*/
 .home-title {
-color: #555c05;  
+ color: #555c05; 
+ font-size: 2em; 
+ margin-top: 10px;
  }
  h4 {
     color: #111111;    
  }
- .book { 
-    color: #111111;
- }
- .msg p{
-    color: #111111;  
- }
  .msg h2{
-    background-color: #83abbb65; 
+    /* (add later ) background-color: #83abbb65; */
     color: #8f3333;  
  }
  footer p{
@@ -112,26 +145,65 @@ color: #555c05;
 #hero-img{
    width: 100%;
 }
-
 /* -------------Remove  underline link and make it text-decoration -----------------*/
 nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+/*------additional Nav a setting-------*/ 
+/*background-color: #397e9af7;  effect for hover add later*/
+padding: 35px; /* padding/spacing and background color*/
 }    
 .book {
     text-align: center;
     color: #111111; 
     text-decoration: none;
 }
-.join{
-    color: #111111; 
-    text-decoration: none;   
-}
 footer a{
     color: #fffcfc; 
     text-decoration: none;   
 }
 footer p a:hover {
-    text-decoration: underline;
-}    
+    text-decoration: underline; 
+}
+.book, .join{
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size:18px; 
+    padding: 15px 30px; 
+    margin-top: 50px;
+    border-radius: 5px;
+}  
+.msg p {
+    font: size 0.8em;
+    color: #111111; /*front color*/
+    padding-bottom: 15px; 
+}
+h2 {
+    margin: 0;
+}
+/* Padding to logo link */
+logo_link{
+    padding-top: 5px;
+}
+footer .social img{
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
+.mountains {
+    display: block;
+    margin: left;
+    /*spacibg */
+    padding-top: 35px; 
+    padding-bottom: 50px; 
+}
+    
