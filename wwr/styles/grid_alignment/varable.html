@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Which Class</title>
+<script>
+/* Input: A girl's age
+ * Processing: If statements to choose a class
+ * Output: Name of the class
+ */
+function chooseClass() {
+    let age = parseInt(document.getElementById('x').value);
+
+    let x = 2, y = 6, z = 5;
+    let result = (x < 3 && (y < 7 ^ z != 3));
+
+    document.getElementById('result').innerHTML = group;
+}
+</script>
+</head>
+
+<body>
+Please enter your age: <input type="text" id="age" size="3"><br>  
+<button type="button" onclick="chooseClass()">Class</button>  
+<div id="group"></div>  
+</body>
+</html>
