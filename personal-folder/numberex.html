@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>sum odds</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script>
+    "use strict";
+    //Defining table
+    //Input: ask the user any integer number
+    //Processing: the program will then add all the odd numbers that in range in the user input
+    //Output: it will display the odd numbers and sum of odd numbers.
+    function inputOutput() {
+        let n = parseInt(document.getElementById("inputBox").value);
+        let odd = ""
+        let output = 0;
+
+        for (let i = 1; i <= n ; i++) {
+            if(i % 2 != 0) {
+            odd = odd + " " + i + " ";
+            output = output + i;
+            }
+        }
+        document.getElementById("outputDiv").innerHTML = ("The sum of odd numbers from 1 to " + n + " which are " + odd + " is: " + output);
+    }
+   
+</script>
+</head>
+<body>
+    <h1>Sum of odd number</h1>
+    <input type="text" id="inputBox">
+    <button type="button" onclick="inputOutput()">Click Me</button>
+    <div id="outputDiv">This div will be overwritten</div>
+</body>
+</html>
