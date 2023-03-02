@@ -291,6 +291,13 @@ grid-column:  1/11;
     grid-template-columns: repeat(10, 1fr);
 }
 
+.home-grid2 {
+   grid-column: 2/3;
+   background-color: #3e858567;
+   margin-top: -70%;
+}
+
+
 /* Media view  */ 
 
 @media screen and (max-width: 900px) {
@@ -333,5 +340,15 @@ grid-column:  1/11;
     footer {
         margin-top: 25px;
     }
+    .home-title2 {
+        color: #fffcfc;
+    }
+    .about-us {
+        margin: 0 auto;
+        text-align: center;
+        text-align: justify;
+    }
 }
-            
+
+
+
