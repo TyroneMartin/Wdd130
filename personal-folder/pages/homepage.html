@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="author" content="Tyrone Martin">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home Page</title>
+            <link rel="stylesheet" href="../styles/homepage.css">
+            <script>
+                  let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+     </head>
+            <body>
+              <div id="content"> 
+                    <header>
+                    <a id="logo_link" href="../pages/homepage.html"> 
+                            <img class="icon" src="../images/ytts_logo.png" alt="YTTS Logo">
+                        </a>
+                        <!--main pages/links references-->
+                        <nav class="mainLinks1">
+                        <a href="../pages/homepage.html" target="_blank">Home</a>
+                        <a href="../pages/about-us.html" target="_blank">About Us</a>
+                        <a href="../pages/contact_us.html" target="_blank">Contact Us</a>
+                        </nav>
+                    </header>
+                    <div class="container2">
+                        <div class="slideshow-container">
+
+                            <section class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="../images/banner_image_office_with_contact_us.png" style="width:100%">
+                              <div class="text">Caption Text</div>
+                            </section>
+    
+                            <section class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="../images/people_standing.png" style="width:100%">
+                              <div class="text">Caption Two</div>
+                            </section>
+                            
+                            <section class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img src="../images/never_leave_your_office_photo.png" style="width:100%">
+                              <div class="text">Caption Three</div>
+                            </section>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                            <div class="container3">
+                                <p>Point One</p>
+                                <p>Point Two</p>
+                                <p>Point Three</p>   
+                         </div> 
+                    </div>
+                    <main class="home-grid">
+                            <section class="sendingMessagesImage">
+                                    <p>Point One</p>
+                                    <p>Point Two</p>
+                                    <p>Point Three</p>   
+                            </section>
+                        <div class="headerContactUs">
+                              <h1>Home Page</h1>
+                              <p>Welcome to our website, we offer the ultimate solution for managing your company's tech requests. We understand that submitting and tracking tech requests can be a challenging and time-consuming process, which is why we have developed a user-friendly platform that enables you to create and track tech requests from the comfort of your desk. Our innovative ticketing system makes it easy for you to submit requests and get real-time updates on the status of your requests, without having to pick up the phone or send multiple emails.
+                              </p>
+                        </div>
+                    </main>
+           <footer>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img height="30" src="../images/facebook.png" alt="FB icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img height="30" src="../images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img height="30" src="../images/instagram.png" alt="Instagram icon">
+                </a>
+            </div>
+               <p><a href="../pages/contact_us.html">Contact Us</a></p>
+               <p><a href="../pages/about-us.html">About Us</a></p>
+               <p><a href="../pages/feedback.html">Feedback</a></p>
+               <p><a href="../pages/site-plan.html">Site Plan</a></p>
+            <div class="fooderLogo">
+                <img class="fooderLogo2" src="../images/ytts_logo.png" alt="footer ytts logo image">
+                <div class="copyParagraph"> 
+                    <p>YTTS &copy; 2023 - All rights reserved</p>
+                    </div>
+               </div>
+           </footer>
+          </div>
+     </body>   
+</html>
+    
+
+
