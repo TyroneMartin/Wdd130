@@ -104,15 +104,7 @@ nav a:hover {
     color: #111111;
     opacity: .6;
     transform: scale(1.1);
-}
-footer {
-     background-color: #111111;
-     margin-top: 200px; 
-     padding: 25px 50px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;      
-}
+}      
 /* ------------------------------*/
 a:hover {
     background-color: #83abbb65; 
@@ -135,27 +127,6 @@ a:hover {
  h4 {
     color: #111111;    
  }
-
- footer p{
-    color: #ffffff; 
-    text-align: left;
-    /*front size*/
-    font-size: 1.2em;   
- }
- footer a:hover{
-    background-color: #83abbb65; 
-    color: #ffffff;  
- }
-/* ------------------------------*/
-/* social media*/
-.social {
-    margin: left;
-    text-align: left;  
-}
-.copyParagraph p{
-font-size: small;
-}
-
 /* -------------hero-img Width and height-----------------*/
 #hero-img{
    width: 100%;
@@ -174,23 +145,12 @@ nav a {
  /* padding/spacing and background color*/
 
 
-footer a{
-    color: #fffcfc; 
-    text-decoration: none;   
-}
-footer p a:hover {
-    text-decoration: underline; 
-}
-
 h2 {
     margin: 0;
 }
 /* Padding to logo link */
 logo_link{
     padding-top: 5px;
-}
-footer {
-    padding-top: 15px;
 }
 main section img {
     box-sizing: border-box;
