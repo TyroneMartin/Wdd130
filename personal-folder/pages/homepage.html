@@ -1,40 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
+          <head>
             <meta charset="UTF-8">
             <meta name="author" content="Tyrone Martin">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Home Page</title>
-            <link rel="stylesheet" href="../styles/homepage.css">
-            <script>
-                  let slideIndex = 1;
-                showSlides(slideIndex);
-                
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-                
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-                
-                function showSlides(n) {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}    
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                }
-            </script>
+            <link rel="stylesheet" href="../styles/about_us.css">
      </head>
             <body>
               <div id="content"> 
@@ -49,54 +21,34 @@
                         <a href="../pages/contact_us.html" target="_blank">Contact Us</a>
                         </nav>
                     </header>
-                    <div class="container2">
-                        <div class="slideshow-container">
-
-                            <section class="mySlides fade">
-                              <div class="numbertext">1 / 3</div>
-                              <img src="../images/banner_image_office_with_contact_us.png" style="width:100%">
-                              <div class="text">Caption Text</div>
-                            </section>
-    
-                            <section class="mySlides fade">
-                              <div class="numbertext">2 / 3</div>
-                              <img src="../images/people_standing.png" style="width:100%">
-                              <div class="text">Caption Two</div>
-                            </section>
-                            
-                            <section class="mySlides fade">
-                              <div class="numbertext">3 / 3</div>
-                              <img src="../images/never_leave_your_office_photo.png" style="width:100%">
-                              <div class="text">Caption Three</div>
-                            </section>
-                            
-                            <a class="prev" onclick="plusSlides(-1)">❮</a>
-                            <a class="next" onclick="plusSlides(1)">❯</a>
-                            
+                    <div class="heroBanner2">
+                        <img class="bannerImage" src="../images/" alt="Office banner photo showing office meeting">
+                        <div class="dropdown">
+                            <button class="dropbtn">Resources</button>
+                            <div class="dropdown-content">
+                              <a href="../homepage.html">Home Page</a>
+                              <a href="/wdd130/wwr/styles/new_contactus.html">Sign up today</a>
+                              <a href="https://youtu.be/ZSiXZxVpVhs">YouTude</a>
                             </div>
-                            <br>
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span> 
-                                <span class="dot" onclick="currentSlide(2)"></span> 
-                                <span class="dot" onclick="currentSlide(3)"></span> 
-                            </div>
-                            <div class="container3">
-                                <p>Point One</p>
-                                <p>Point Two</p>
-                                <p>Point Three</p>   
-                         </div> 
+                          </div>
                     </div>
                     <main class="home-grid">
                             <section class="sendingMessagesImage">
-                                    <p>Point One</p>
-                                    <p>Point Two</p>
-                                    <p>Point Three</p>   
+                                <img class="avatarImage" src="../images" alt="Avatar with message envelope .">
+                                <h5 class="aboutUsHeading"> More About Us</h5>
                             </section>
                         <div class="headerContactUs">
-                              <h1>Home Page</h1>
-                              <p>Welcome to our website, we offer the ultimate solution for managing your company's tech requests. We understand that submitting and tracking tech requests can be a challenging and time-consuming process, which is why we have developed a user-friendly platform that enables you to create and track tech requests from the comfort of your desk. Our innovative ticketing system makes it easy for you to submit requests and get real-time updates on the status of your requests, without having to pick up the phone or send multiple emails.
+                              <h1>Why RemotelyLog?</h1>
+                              <p>We had developed a comprehensive tech request management platform that is designed to simplify the process of submitting and tracking technical support requests. We understand that managing tech requests can be a daunting task that consumes a lot of time and energy. However, our platform offers a simple, efficient, and user-friendly solution that allows you to submit requests from the comfort of your desk without having to leave your workspace or pick up the phone.<br><br> People come to our site is to simplify their tech request management process. Our site is designed to be user-friendly, intuitive, and accessible, which makes it easy for visitors to submit tech requests, track their requests, and communicate with our technical support team. 
                               </p>
                         </div>
+                            <div class="headerContactUs2">
+                                <h1>Support you can trust! </h1>
+                                <p>One of the main reasons people come to our site is to simplify their tech request management process. We understand that submitting tech requests can be a frustrating and time-consuming process, especially when you have to wait on hold for an extended period or send emails back and forth. Therefore, we have developed a platform that enables you to submit requests quickly and easily through a user-friendly ticketing system. <br><br> Another reason visitors come to our site is due to the convenience and ease of use that our platform offers. Our site is designed to be user-friendly, intuitive, and accessible, which makes it easy for visitors to submit tech requests, track their requests, and communicate with our technical support team. We are committed to providing exceptional customer service and support, which sets us apart from other tech request management platforms.</p>
+                            </div>
+                            <div id="blackgroud">
+                                <p>Sign Up today!</p>
+                            </div>
                     </main>
            <footer>
             <div class="social">
