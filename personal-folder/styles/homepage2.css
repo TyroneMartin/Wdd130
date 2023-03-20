@@ -43,6 +43,16 @@ margin-left: auto;
 margin-right: auto;
 text-align: center;
 }
+.support-YouCanTrust h1{
+font-size: 50px;
+text-align: center;
+color: #3E8585;
+}
+.support-YouCanTrust p{
+  margin-right: -90%;
+    text-align: center;
+    text-align: justify;
+    }
 /* ------------------------------*/
 /* Logo styling and width*/
 .icon{
@@ -100,6 +110,7 @@ footer {
      display: flex;
      justify-content: space-around;
      align-items: center;      
+     text-align: center;
 }
 /* ------------------------------*/
 /*Adding class colors*/
@@ -634,7 +645,6 @@ grid-column:  1/11;
   .dropdown:hover .dropbtn {
     background-color: #a1afa1;
 }
-    
   .book2{
         background-color: #d9c2a3;
         color: black;
@@ -643,6 +653,8 @@ grid-column:  1/11;
         padding: 15px 30px; 
         margin-top: 50px;
         border-radius: 5px;
+
+
 
 
     
