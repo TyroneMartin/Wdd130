@@ -30,7 +30,7 @@
   }
  
 /* Header color*/
-header{
+.header2, header{
     text-align: left;
     }
 /* ------------------------------*/
@@ -86,7 +86,7 @@ grid-column: 2/3;
     color:#3E8585;
 }
 /* ---------------banner---------------*/
-header {
+.header2, header {
     background-color:#696f6f70;
     display: grid;
     grid-template-columns: 150px auto;
