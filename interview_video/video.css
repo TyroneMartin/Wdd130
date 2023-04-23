@@ -1,0 +1,19 @@
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+  h1 {
+      text-align: center;
+      color: red;
+  } 
+  
+  body {
+      background-color: rgb(205, 189, 189);
+  }
+  p, h4{
+      text-align: center;
+      color: rgb(70, 5, 5);
+  }
+ 
